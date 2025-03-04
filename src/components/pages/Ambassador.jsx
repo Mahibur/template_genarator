@@ -5,6 +5,7 @@ import { Button, Modal, Form } from "react-bootstrap";
 import { getCroppedImg } from "../../utils/cropUtils";
 import { toJpeg } from "html-to-image";
 import Container from "../layers/Container";
+import { Link } from "react-router-dom";
 
 const Ambassador = () => {
   const [name, setName] = useState("");
@@ -84,7 +85,7 @@ const Ambassador = () => {
             <input {...getInputProps()} />
             <p className="text-center">Upload Image</p>
           </div>
-          <a className="bg-red-400 py-4 px-5 rounded-md w-35 text-center" href="/">Back to Home</a>
+          <Link className="bg-red-400 py-4 px-5 rounded-md w-35 text-center" to="/">Back to Home</Link>
           </div>
         </div>
         <Modal show={showModal} onHide={handleCancel}>
