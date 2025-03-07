@@ -77,7 +77,7 @@ const Ambassador = () => {
         Ambassador
       </h1>
       <Container className="px-0.5 flex flex-col items-center justify-center">
-        <div className="border-2 max-w-160 mx-auto bg-[#cacaca] border-blue-600 mt-10 p-5 md:p-10 flex flex-col items-center gap-y-3.5">
+        <div className="border-2 max-w-160 mx-auto border-blue-600 mt-10 p-5 md:p-10 flex flex-col items-center gap-y-3.5">
           <p className="text-base font-semibold text-center pb-1">
             Please Enter the Name of person and Also please upload a headshot
             image of Person.
@@ -98,7 +98,7 @@ const Ambassador = () => {
             <p className="text-center">Upload Image</p>
           </button>
           {imageSrc && (
-            <div className="relative w-60 h-60 md:w-100 md:h-75 mt-4 mb-10 mx-auto">
+            <div className="relative w-60 h-60 md:w-100 md:h-75 mt-4 mb-16 mx-auto">
               <Cropper
                 image={imageSrc}
                 crop={crop}
@@ -111,7 +111,7 @@ const Ambassador = () => {
                 onCropComplete={onCropComplete}
                 restrictPosition={false}
               />
-              <div className="absolute bottom-[60%] -left-[25%] zoom flex items-center gap-x-2 rotate-270 w-[300px] h-[50px]">
+              <div className="zoom absolute bottom-[70%] md:bottom-[60%] -left-[68%] md:-left-[43%] flex items-center gap-x-2 rotate-270 w-[300px]">
                 <label htmlFor="zoom">Zoom</label>
                 <input
                   id="zoom"
@@ -124,7 +124,7 @@ const Ambassador = () => {
                   className="w-1/3"
                 />
               </div>
-              <div className=" absolute bottom-0 left-[20%] rotation flex gap-x-5 w-full">
+              <div className=" rotation absolute -bottom-[10%] left-[20%] flex gap-x-5 w-full">
                 <label htmlFor="rotation">Rotation</label>
                 <input
                   id="rotation"
@@ -137,16 +137,16 @@ const Ambassador = () => {
                   className="w-1/3"
                 />
               </div>
-              <div className="absolute top-full right-0 flex mt-2 justify-between w-full">
+              <div className="absolute top-full right-0 flex mt-8 justify-between w-full">
                 <Button
                   variant="secondary"
                   onClick={handleCancel}
-                  className="mr-4 bg-blue-200 hover:bg-blue-300 transition-all py-2 px-16 rounded-xs"
+                  className="mr-4 bg-blue-200 hover:bg-blue-300 transition-all py-2 px-7 md:px-16 rounded-xs"
                 >
                   Cancel
                 </Button>
                 <Button
-                  className="bg-blue-400 hover:bg-blue-500 transition-all py-2 px-16 rounded-xs"
+                  className="bg-blue-400 hover:bg-blue-500 transition-all py-2 px-7 md:px-16 rounded-xs"
                   variant="primary"
                   onClick={showCroppedImage}
                 >
