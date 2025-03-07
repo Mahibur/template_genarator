@@ -6,6 +6,8 @@ import { getCroppedImg } from "../../utils/cropUtils";
 import { toJpeg } from "html-to-image";
 import Container from "../layers/Container";
 import { Link } from "react-router-dom";
+import { CiImageOn } from "react-icons/ci";
+import { IoReturnDownBack } from "react-icons/io5";
 
 const Ambassador = () => {
   const [name, setName] = useState("");
@@ -74,36 +76,29 @@ const Ambassador = () => {
       <h1 className="bg-[#FD6400] text-3xl font-bold text-center py-6">
         Ambassador
       </h1>
-      <Container>
-        <div className="border-2 border-blue-600 mt-10 py-4 mx-2 px-8 flex flex-col gap-y-3.5">
-          <p className="text-xl font-semibold text-center pb-1">
+      <Container className="px-0.5 flex flex-col items-center justify-center">
+        <div className="border-2 max-w-160 mx-auto bg-[#cacaca] border-blue-600 mt-10 p-5 md:p-10 flex flex-col items-center gap-y-3.5">
+          <p className="text-base font-semibold text-center pb-1">
             Please Enter the Name of person and Also please upload a headshot
             image of Person.
           </p>
           <Form.Control
-            className="inline-block py-3 w-full outline-none border border-black rounded-md px-1.5"
+            className="inline-block py-1 w-65 sm:w-112  outline-none border border-black px-1.5"
             placeholder="Enter your Name"
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
-          <div className="flex justify-between md:gap-x-4">
-            <div
-              {...getRootProps()}
-              className="w-35 bg-[#cecece] py-3 px-1 rounded-md cursor-pointer"
-            >
-              <input {...getInputProps()} />
-              <p className="text-center">Upload Image</p>
-            </div>
-            <Link
-              className="bg-red-400 py-4 px-5 rounded-md w-35 text-center"
-              to="/"
-            >
-              Back to Home
-            </Link>
-          </div>
+          <button
+            {...getRootProps()}
+            className="flex gap-x-0.5 items-center text-base rounded-sm px-2.5 py-0.5 text-[#333] bg-[#f0f0f0] border-2 border-[#ccc] cursor-pointer"
+          >
+            <input {...getInputProps()} />
+            <CiImageOn />
+            <p className="text-center">Upload Image</p>
+          </button>
           {imageSrc && (
-            <div className="relative w-[400px] h-[300px] mt-4 mx-auto">
+            <div className="relative w-60 h-60 md:w-100 md:h-75 mt-4 mb-10 mx-auto">
               <Cropper
                 image={imageSrc}
                 crop={crop}
@@ -116,57 +111,65 @@ const Ambassador = () => {
                 onCropComplete={onCropComplete}
                 restrictPosition={false}
               />
-              <div className="absolute top-0 left-0 right-0 flex flex-col items-center p-4 bg-white bg-opacity-75 z-10">
-                <div className="flex justify-between w-full">
-                  <label htmlFor="zoom">Zoom</label>
-                  <input
-                    id="zoom"
-                    type="range"
-                    min={1}
-                    max={3}
-                    step={0.1}
-                    value={zoom}
-                    onChange={(e) => setZoom(e.target.value)}
-                    className="w-1/3"
-                  />
-                  <label htmlFor="rotation">Rotation</label>
-                  <input
-                    id="rotation"
-                    type="range"
-                    min={0}
-                    max={360}
-                    step={1}
-                    value={rotation}
-                    onChange={(e) => setRotation(e.target.value)}
-                    className="w-1/3"
-                  />
-                </div>
-                <div className="absolute top-full right-10">
-                  <Button
-                    variant="secondary"
-                    onClick={handleCancel}
-                    className="mr-4 bg-blue-200 p-1 rounded-sm"
-                  >
-                    Cancel
-                  </Button>
-                  <Button
-                    className="bg-blue-400 p-1 rounded-sm"
-                    variant="primary"
-                    onClick={showCroppedImage}
-                  >
-                    Done
-                  </Button>
-                </div>
+              <div className="absolute bottom-[60%] -left-[25%] zoom flex items-center gap-x-2 rotate-270 w-[300px] h-[50px]">
+                <label htmlFor="zoom">Zoom</label>
+                <input
+                  id="zoom"
+                  type="range"
+                  min={-3}
+                  max={3}
+                  step={0.1}
+                  value={zoom}
+                  onChange={(e) => setZoom(e.target.value)}
+                  className="w-1/3"
+                />
+              </div>
+              <div className=" absolute bottom-0 left-[20%] rotation flex gap-x-5 w-full">
+                <label htmlFor="rotation">Rotation</label>
+                <input
+                  id="rotation"
+                  type="range"
+                  min={-360}
+                  max={360}
+                  step={1}
+                  value={rotation}
+                  onChange={(e) => setRotation(e.target.value)}
+                  className="w-1/3"
+                />
+              </div>
+              <div className="absolute top-full right-0 flex mt-2 justify-between w-full">
+                <Button
+                  variant="secondary"
+                  onClick={handleCancel}
+                  className="mr-4 bg-blue-200 hover:bg-blue-300 transition-all py-2 px-16 rounded-xs"
+                >
+                  Cancel
+                </Button>
+                <Button
+                  className="bg-blue-400 hover:bg-blue-500 transition-all py-2 px-16 rounded-xs"
+                  variant="primary"
+                  onClick={showCroppedImage}
+                >
+                  Done
+                </Button>
               </div>
             </div>
           )}
+          {/* cropping part ends here */}
         </div>
+        <Link
+          className="flex gap-x-1 items-center mt-4 text-base rounded-sm px-2.5 py-1.5 text-[#fff] bg-red-500 cursor-pointer text-center"
+          to="/"
+        >
+          <IoReturnDownBack />
+          Back to Homepage
+        </Link>
         {croppedImage && (
-          <div className="py-10">
+          <div className="py-3 flex flex-col items-center gap-y-1">
             <Button
               variant="success"
               onClick={handleDownload}
-              className="bg-blue-500 px-2 py-1 rounded-md mb-3 text-center text-base"
+              className="bg-blue-500 px-4 py-2 rounded-md mb-3 text-center text-base"
             >
               Download
             </Button>
