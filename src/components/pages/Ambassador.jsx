@@ -141,7 +141,7 @@ const Ambassador = () => {
                     className="w-1/3"
                   />
                 </div>
-                <div className="absolute top-10 right-10">
+                <div className="absolute top-full right-10">
                   <Button
                     variant="secondary"
                     onClick={handleCancel}
