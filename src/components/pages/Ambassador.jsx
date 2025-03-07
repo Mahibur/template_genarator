@@ -103,7 +103,7 @@ const Ambassador = () => {
             </Link>
           </div>
           {imageSrc && (
-            <div className="relative w-full h-[300px] mt-4">
+            <div className="relative w-[400px] h-[300px] mt-4 mx-auto">
               <Cropper
                 image={imageSrc}
                 crop={crop}

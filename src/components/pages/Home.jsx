@@ -25,7 +25,7 @@ const Home =()=>{
         <>
         <Container>
             <h1 className="py-3 text-center bg-blue-200 text-4xl font-semibold">Team Go Extreme</h1>
-            <div className="main pt-4 flex flex-wrap gap-x-5 items-center justify-center">
+            <div className="main pt-4 flex flex-wrap gap-x-11 items-center justify-center">
                 <Cart img={photo_1} text="Managing Director" href="/managingdirector"/>
                 <Cart img={photo_2} text="Corporate Director" href="/corporatedirector"/>
                 <Cart img={photo_3} text="Manager" href="/manager"/>
