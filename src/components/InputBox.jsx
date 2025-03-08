@@ -95,7 +95,7 @@ const InputBox = ({imgClass,className}) => {
             <p className="text-center">Upload Image</p>
           </button>
           {imageSrc && (
-            <div className="relative w-60 h-60 rounded-[50%] md:w-100 md:h-75 mt-4 mb-16 mx-auto">
+            <div className="relative w-60 h-60 rounded-[50%] md:w-75 md:h-75 mt-4 mb-16 mx-auto">
               <Cropper
                 image={imageSrc}
                 crop={crop}
@@ -108,7 +108,7 @@ const InputBox = ({imgClass,className}) => {
                 onCropComplete={onCropComplete}
                 restrictPosition={false}
               />
-              <div className="zoom absolute bottom-[70%] md:bottom-[60%] -left-[68%] md:-left-[43%] flex items-center gap-x-2 rotate-270 w-[300px]">
+              <div className="zoom absolute bottom-[70%] md:bottom-[60%] -left-[68%] md:-left-[55%] flex items-center gap-x-2 rotate-270 w-[300px]">
                 <label htmlFor="zoom">Zoom</label>
                 <input
                   id="zoom"
@@ -166,7 +166,7 @@ const InputBox = ({imgClass,className}) => {
             <Button
               variant="success"
               onClick={handleDownload}
-              className="bg-[#007bff] text-white cursor-pointer px-4 py-2 rounded-md mb-3 text-center text-base w-50"
+              className="bg-[#007bff] text-white cursor-pointer px-4 py-2 rounded-md mb-3 text-center text-base w-2xs"
             >
               <div className="flex items-center justify-center gap-x-0.5">
 
