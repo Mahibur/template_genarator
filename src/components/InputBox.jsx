@@ -162,20 +162,21 @@ const InputBox = ({imgClass,className}) => {
           Back to Homepage
         </Link>
         {croppedImage && (
-          <div className="py-3 flex flex-col items-center gap-y-1">
+          <div className="py-3 flex flex-col justify-center items-center gap-y-1">
             <Button
               variant="success"
               onClick={handleDownload}
-              className="bg-[#007bff] text-white cursor-pointer px-4 py-2 rounded-md mb-3 text-center text-base flex items-center gap-x-0.5"
+              className="bg-[#007bff] text-white cursor-pointer px-4 py-2 rounded-md mb-3 text-center text-base w-50"
             >
+              <div className="flex items-center justify-center gap-x-0.5">
+
               <FaDownload />
               Download Image
+              </div>
             </Button>
-          </div>
-        )}
-        <div
+            <div
               ref={divRef}
-              className={`mt-10 relative ${imgClass} bg-cover bg-no-repeat object-cover bg-center w-[1024px] py-[512px]`}
+              className={`mt-2 relative ${imgClass} bg-cover bg-no-repeat object-cover bg-center w-[1024px] py-[512px]`}
             >
               <p className="absolute left-1/2 bottom-[10%] translate-x-[-50%] text-4xl font-bold capitalize text-[#e7f7f4]">
                 {name}
@@ -186,6 +187,8 @@ const InputBox = ({imgClass,className}) => {
                 alt=""
               />
             </div>
+          </div>
+        )}
       </Container>
     </div>
   );
