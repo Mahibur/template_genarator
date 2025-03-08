@@ -8,6 +8,7 @@ import Container from "../layers/Container";
 import { Link } from "react-router-dom";
 import { CiImageOn } from "react-icons/ci";
 import { IoReturnDownBack } from "react-icons/io5";
+import Heading from "../../Heading";
 
 const ManagingDirector = () => {
   const [name, setName] = useState("");
@@ -73,9 +74,7 @@ const ManagingDirector = () => {
 
   return (
     <div>
-      <h1 className="bg-[#30CC89] text-3xl font-bold text-center py-6">
-          Managing Director
-        </h1>
+        <Heading text="Managing Director" className="bg-[#30CC89]"/>
       <Container className="px-0.5 flex flex-col items-center justify-center">
         <div className="border-2 max-w-160 mx-auto border-blue-600 mt-10 p-5 md:p-10 flex flex-col items-center gap-y-3.5">
           <p className="text-base font-semibold text-center pb-1">

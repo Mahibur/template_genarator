@@ -8,6 +8,7 @@ import Container from "../layers/Container";
 import { Link } from "react-router-dom";
 import { CiImageOn } from "react-icons/ci";
 import { IoReturnDownBack } from "react-icons/io5";
+import Heading from "../../Heading";
 
 const SeniorManager = () => {
   const [name, setName] = useState("");
@@ -73,8 +74,7 @@ const SeniorManager = () => {
 
   return (
     <div>
-      <h1 className="bg-[#5DF30E] text-3xl font-bold text-center py-6">
-      Senior Manager</h1>
+      <Heading text="Senior Manager" className="bg-[#5DF30E]"/>
       <Container className="px-0.5 flex flex-col items-center justify-center">
         <div className="border-2 max-w-160 mx-auto border-blue-600 mt-10 p-5 md:p-10 flex flex-col items-center gap-y-3.5">
           <p className="text-base font-semibold text-center pb-1">

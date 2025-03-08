@@ -2,15 +2,14 @@ import React, { useState, useCallback, useRef } from "react";
 import Cropper from "react-easy-crop";
 import { useDropzone } from "react-dropzone";
 import { Button, Form } from "react-bootstrap";
-import { getCroppedImg } from "../../utils/cropUtils";
+import { getCroppedImg } from "../utils/cropUtils";
 import { toJpeg } from "html-to-image";
-import Container from "../layers/Container";
 import { Link } from "react-router-dom";
 import { CiImageOn } from "react-icons/ci";
-import { IoReturnDownBack } from "react-icons/io5";
-import Heading from "../../Heading";
+import { FaDownload, FaUndoAlt } from "react-icons/fa";
+import Container from "./layers/Container";
 
-const GoldAmbassador = () => {
+const InputBox = ({imgClass,className}) => {
   const [name, setName] = useState("");
   const [imageSrc, setImageSrc] = useState(null);
   const [crop, setCrop] = useState({ x: 0, y: 0 });
@@ -74,7 +73,6 @@ const GoldAmbassador = () => {
 
   return (
     <div>
-        <Heading text="Global Enterpreneur" className="bg-[#D39332]"/>
       <Container className="px-0.5 flex flex-col items-center justify-center">
         <div className="border-2 max-w-160 mx-auto border-blue-600 mt-10 p-5 md:p-10 flex flex-col items-center gap-y-3.5">
           <p className="text-base font-semibold text-center pb-1">
@@ -97,7 +95,7 @@ const GoldAmbassador = () => {
             <p className="text-center">Upload Image</p>
           </button>
           {imageSrc && (
-            <div className="relative w-60 h-60 md:w-100 md:h-75 mt-4 mb-16 mx-auto">
+            <div className="relative w-60 h-60 rounded-[50%] md:w-100 md:h-75 mt-4 mb-16 mx-auto">
               <Cropper
                 image={imageSrc}
                 crop={crop}
@@ -140,12 +138,12 @@ const GoldAmbassador = () => {
                 <Button
                   variant="secondary"
                   onClick={handleCancel}
-                  className="mr-4 bg-blue-200 hover:bg-blue-300 transition-all py-2 px-7 md:px-16 rounded-xs"
+                  className="cursor-pointer mr-4 text-white bg-[rgba(0,123,255,0.77)] transition-all py-2 px-7 md:px-16 rounded-xs"
                 >
                   Cancel
                 </Button>
                 <Button
-                  className="bg-blue-400 hover:bg-blue-500 transition-all py-2 px-7 md:px-16 rounded-xs"
+                  className="cursor-pointer text-white bg-[#007bff] transition-all py-2 px-7 md:px-16 rounded-xs"
                   variant="primary"
                   onClick={showCroppedImage}
                 >
@@ -160,7 +158,7 @@ const GoldAmbassador = () => {
           className="flex gap-x-1 items-center mt-4 text-base rounded-sm px-2.5 py-1.5 text-[#fff] bg-red-500 cursor-pointer text-center"
           to="/"
         >
-          <IoReturnDownBack />
+          <FaUndoAlt />
           Back to Homepage
         </Link>
         {croppedImage && (
@@ -168,28 +166,29 @@ const GoldAmbassador = () => {
             <Button
               variant="success"
               onClick={handleDownload}
-              className="bg-blue-500 px-4 py-2 rounded-md mb-3 text-center text-base"
+              className="bg-[#007bff] text-white cursor-pointer px-4 py-2 rounded-md mb-3 text-center text-base flex items-center gap-x-0.5"
             >
-              Download
+              <FaDownload />
+              Download Image
             </Button>
-            <div
-              ref={divRef}
-              className={`relative bg-[url(/9.jpg)] bg-cover bg-no-repeat object-cover bg-center w-[1024px] py-[512px]`}
-            >
-              <p className="absolute left-1/2 bottom-[10%] translate-x-[-50%] text-4xl font-bold italic capitalize text-[#e7f7f4]">
-                {name}
-              </p>
-              <img 
-                className="absolute top-1/2 left-1/2 translate-x-[-53%] translate-y-[-24%] block w-70.5 rounded-[50%]"
-                src={croppedImage}
-                alt="Cropped"
-              />
-            </div>
           </div>
         )}
+        <div
+              ref={divRef}
+              className={`mt-10 relative ${imgClass} bg-cover bg-no-repeat object-cover bg-center w-[1024px] py-[512px]`}
+            >
+              <p className="absolute left-1/2 bottom-[10%] translate-x-[-50%] text-4xl font-bold capitalize text-[#e7f7f4]">
+                {name}
+              </p>
+              <img
+                className={`${className}`}
+                src={croppedImage}
+                alt=""
+              />
+            </div>
       </Container>
     </div>
   );
 };
 
-export default GoldAmbassador;
+export default InputBox;
