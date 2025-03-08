@@ -98,7 +98,7 @@ const Ambassador = () => {
             <p className="text-center">Upload Image</p>
           </button>
           {imageSrc && (
-            <div className="relative w-60 h-60 md:w-100 md:h-75 mt-4 mb-16 mx-auto">
+            <div className="relative w-60 h-60 rounded-[50%] md:w-100 md:h-75 mt-4 mb-16 mx-auto">
               <Cropper
                 image={imageSrc}
                 crop={crop}
