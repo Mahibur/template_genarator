@@ -138,12 +138,12 @@ const InputBox = ({imgClass,className}) => {
                 <Button
                   variant="secondary"
                   onClick={handleCancel}
-                  className="cursor-pointer mr-4 text-white bg-[rgba(0,123,255,0.77)] transition-all py-2 px-7 md:px-16 rounded-xs"
+                  className="cursor-pointer mr-4 text-white bg-[rgba(0,123,255,0.77)] transition-all py-2 px-7 md:px-10 rounded-xs"
                 >
                   Cancel
                 </Button>
                 <Button
-                  className="cursor-pointer text-white bg-[#007bff] transition-all py-2 px-7 md:px-16 rounded-xs"
+                  className="cursor-pointer text-white bg-[#007bff] transition-all py-2 px-7 md:px-10 rounded-xs"
                   variant="primary"
                   onClick={showCroppedImage}
                 >
