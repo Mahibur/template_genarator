@@ -169,7 +169,7 @@ const InputBox = ({imgClass,className}) => {
               className="bg-[#007bff] text-white cursor-pointer px-4 py-2 rounded-md mb-3 text-center text-base w-2xs"
             >
               <div className="flex items-center justify-center gap-x-0.5">
-
+ 
               <FaDownload />
               Download Image
               </div>
@@ -178,7 +178,7 @@ const InputBox = ({imgClass,className}) => {
               ref={divRef}
               className={`mt-2 relative ${imgClass} bg-cover bg-no-repeat object-cover bg-center w-[1024px] py-[512px]`}
             >
-              <p className="absolute left-1/2 bottom-[10%] translate-x-[-50%] text-4xl font-bold capitalize text-[#e7f7f4]">
+              <p className="absolute left-1/2 bottom-[14%] translate-x-[-50%] text-7xl font-bold capitalize text-[#e7f7f4]">
                 {name}
               </p>
               <img

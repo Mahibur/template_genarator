@@ -36,9 +36,9 @@ const Home =()=>{
                 <Cart img={photo_8} text="Ambassador" href="/ambassador"/>
                 <Cart img={photo_9} text="Gold Ambassador" href="/goldambassador"/>
                 <Cart img={photo_10} text="Platinum Ambassador" href="/platinumambassador"/>
-                <Cart img={photo_11} text="Global Entrepreneur" href="/globalenterpreneurdimond"/>
-                <Cart img={photo_12} text="Global Entrepreneur" href="/globalenterpreneurvip"/>
-                <Cart img={photo_13} text="Global Entrepreneur" href="/globalenterpreneurtwostar"/>
+                <Cart img={photo_11} text="New Dimond Status" href="/globalenterpreneurdimond"/>
+                <Cart img={photo_12} text="New VIP Status" href="/globalenterpreneurvip"/>
+                <Cart img={photo_13} text="2 Star Qualified" href="/globalenterpreneurtwostar"/>
                 <Cart img={photo_14} text="Global Entrepreneur" href="/globalenterpreneuronyour"/>
                 <Cart img={photo_15} text="Global Entrepreneur" href="/globalenterpreneurcruise"/>
                 <Cart img={photo_16} text="Corporate Director" href="/corporatedirectorgreen"/>
