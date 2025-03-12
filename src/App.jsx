@@ -19,6 +19,7 @@ import GlobalEnterpreneurCruise from "./components/pages/GlobalEnterpreneurCruis
 import CorporateDirectorGreen from "./components/pages/CorporateDirectorGreen";
 import Director from "./components/pages/Director";
 import SeniorDirector from "./components/pages/SeniorDirector";
+import RockStar from "./components/pages/RockStar";
 
 
 const App =()=>{
@@ -44,6 +45,7 @@ const App =()=>{
     <Route path="/corporatedirectorgreen" element={<CorporateDirectorGreen/>} />
     <Route path="/director" element={<Director/>} />
     <Route path="/seniordirector" element={<SeniorDirector/>} />
+    <Route path="/rockstar" element={<RockStar/>} />
 
     </Routes>
     </>

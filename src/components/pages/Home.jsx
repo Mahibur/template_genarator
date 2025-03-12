@@ -19,6 +19,7 @@ import photo_15 from "/15.jpg"
 import photo_16 from "/16.jpg"
 import photo_17 from "/17.jpg"
 import photo_18 from "/18.jpg"
+import photo_19 from "/19.jpeg"
 
 const Home =()=>{
     return(
@@ -44,6 +45,7 @@ const Home =()=>{
                 <Cart img={photo_10} text="Platinum Ambassador" href="/platinumambassador"/>
                 <Cart img={photo_14} text="Global Entrepreneur" href="/globalenterpreneuronyour"/>
                 <Cart img={photo_15} text="Global Entrepreneur" href="/globalenterpreneurcruise"/>
+                <Cart img={photo_19} text="Rockstar Award" href="/rockstar"/>
 
             </div>
         </Container>
