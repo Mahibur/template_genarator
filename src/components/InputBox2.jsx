@@ -9,7 +9,7 @@ import { CiImageOn } from "react-icons/ci";
 import { FaDownload, FaUndoAlt } from "react-icons/fa";
 import Container from "./layers/Container";
 
-const InputBox = ({imgClass,className,textClass}) => {
+const InputBox2 = ({imgClass,className,textClass}) => {
   const [name, setName] = useState("");
   const [imageSrc, setImageSrc] = useState(null);
   const [crop, setCrop] = useState({ x: 0, y: 0 });
@@ -176,9 +176,9 @@ const InputBox = ({imgClass,className,textClass}) => {
             </Button>
             <div
               ref={divRef}
-              className={`mt-2 relative ${imgClass} bg-cover bg-no-repeat object-cover bg-center w-[1024px] h-[1024px]`}
+              className={`mt-2 relative ${imgClass} bg-cover bg-no-repeat object-cover bg-center`}
             >
-              <p className={`w-full text-center absolute left-1/2 bottom-[14%] translate-x-[-50%] text-6xl font-bold capitalize text-[#e7f7f4] ${textClass}`}>
+              <p className={`w-full text-center absolute font-bold capitalize ${textClass}`}>
                 {name}
               </p>
               <img
@@ -194,4 +194,4 @@ const InputBox = ({imgClass,className,textClass}) => {
   );
 };
 
-export default InputBox;
+export default InputBox2;
