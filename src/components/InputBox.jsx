@@ -176,9 +176,9 @@ const InputBox = ({imgClass,className}) => {
             </Button>
             <div
               ref={divRef}
-              className={`mt-2 relative ${imgClass} bg-cover bg-no-repeat object-cover bg-center w-[1024px] py-[512px]`}
+              className={`mt-2 relative ${imgClass} bg-cover bg-no-repeat object-cover bg-center w-[1024px] h-[1024px]`}
             >
-              <p className="absolute left-1/2 bottom-[14%] translate-x-[-50%] text-7xl font-bold capitalize text-[#e7f7f4]">
+              <p className="w-full text-center absolute left-1/2 bottom-[14%] translate-x-[-50%] text-6xl font-bold capitalize text-[#e7f7f4]">
                 {name}
               </p>
               <img
