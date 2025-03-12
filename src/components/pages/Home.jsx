@@ -26,24 +26,24 @@ const Home =()=>{
         <Container>
             <h1 className="py-3 text-center bg-blue-200 text-4xl font-semibold">Team Go Extreme</h1>
             <div className="main pt-4 flex flex-wrap gap-x-11 items-center justify-center">
-                <Cart img={photo_11} text="New Dimond Status" href="/globalenterpreneurdimond"/>
+                <Cart img={photo_11} text="New Diamond Status" href="/globalenterpreneurdimond"/>
                 <Cart img={photo_12} text="New VIP Status" href="/globalenterpreneurvip"/>
                 <Cart img={photo_13} text="2 Star Qualified" href="/globalenterpreneurtwostar"/>
-                <Cart img={photo_1} text="Managing Director" href="/managingdirector"/>
-                <Cart img={photo_2} text="Corporate Director" href="/corporatedirector"/>
                 <Cart img={photo_3} text="Manager" href="/manager"/>
                 <Cart img={photo_4} text="Senior Manager" href="/seniormanager"/>
+                <Cart img={photo_17} text="Director" href="/director"/>
+                <Cart img={photo_18} text="Senior Director" href="/seniordirector"/>
+                <Cart img={photo_1} text="Managing Director" href="/managingdirector"/>
+                <Cart img={photo_2} text="Corporate Director" href="/corporatedirector"/>
+                <Cart img={photo_16} text="Corporate Director" href="/corporatedirectorgreen"/>
                 <Cart img={photo_5} text="National Director" href="/nationaldirector"/>
                 <Cart img={photo_6} text="International Director" href="/internationaldirector"/>
                 <Cart img={photo_7} text="Premier Director" href="/premierdirector"/>
-                <Cart img={photo_10} text="Platinum Ambassador" href="/platinumambassador"/>
-                <Cart img={photo_14} text="Global Entrepreneur" href="/globalenterpreneuronyour"/>
-                <Cart img={photo_16} text="Corporate Director" href="/corporatedirectorgreen"/>
-                <Cart img={photo_17} text="Director" href="/director"/>
-                <Cart img={photo_18} text="Senior Director" href="/seniordirector"/>
-                <Cart img={photo_15} text="Global Entrepreneur" href="/globalenterpreneurcruise"/>
                 <Cart img={photo_8} text="Ambassador" href="/ambassador"/>
                 <Cart img={photo_9} text="Gold Ambassador" href="/goldambassador"/>
+                <Cart img={photo_10} text="Platinum Ambassador" href="/platinumambassador"/>
+                <Cart img={photo_14} text="Global Entrepreneur" href="/globalenterpreneuronyour"/>
+                <Cart img={photo_15} text="Global Entrepreneur" href="/globalenterpreneurcruise"/>
 
             </div>
         </Container>
