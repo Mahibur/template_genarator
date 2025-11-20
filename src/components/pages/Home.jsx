@@ -66,21 +66,20 @@ const Home =()=>{
                 <Cart img={photo_20} text="Regional Director" href="/regionaldirector"/>
                 <Cart img={photo_21} text="Senior Manager" href="/seniormanagerpurple"/>
                 <Cart img={photo_22} text="Senior Director" href="/seniordirectorpurple"/>
-                <Cart img={photo_23} text="Regional Director" href="/regionaldirector"/>
-                <Cart img={photo_24} text="Regional Director" href="/regionaldirector"/>
-                <Cart img={photo_25} text="Regional Director" href="/regionaldirector"/>
-                <Cart img={photo_26} text="Regional Director" href="/regionaldirector"/>
-                <Cart img={photo_27} text="Regional Director" href="/regionaldirector"/>
-                <Cart img={photo_28} text="Regional Director" href="/regionaldirector"/>
-                <Cart img={photo_29} text="Regional Director" href="/regionaldirector"/>
-                <Cart img={photo_30} text="Regional Director" href="/regionaldirector"/>
-                <Cart img={photo_31} text="Regional Director" href="/regionaldirector"/>
-                <Cart img={photo_32} text="Regional Director" href="/regionaldirector"/>
-                <Cart img={photo_33} text="Regional Director" href="/regionaldirector"/>
-                <Cart img={photo_34} text="Regional Director" href="/regionaldirector"/>
-                <Cart img={photo_35} text="Regional Director" href="/regionaldirector"/>
-                <Cart img={photo_36} text="Regional Director" href="/regionaldirector"/>
-
+                <Cart img={photo_23} text="Diamond Status" href="/diamondstatus"/>
+                <Cart img={photo_24} text="Managing Director" href="/managingdirectorred"/>
+                <Cart img={photo_25} text="Platinum Ambassador" href="/platinumambassadorgold"/>
+                <Cart img={photo_26} text="Gold Ambassador" href="/goldambassadorgold"/>
+                <Cart img={photo_27} text="New Achivement" href="/newachivement"/>
+                <Cart img={photo_28} text="Manager" href="/managerorange"/>
+                <Cart img={photo_29} text="Corporate Director" href="/corporatedirectorlime"/>
+                <Cart img={photo_30} text="Ambassador" href="/ambassadorpurple"/>
+                <Cart img={photo_31} text="Executive Director" href="/executivedirector"/>
+                <Cart img={photo_32} text="National Director" href="/nationaldirectorcyan"/>
+                <Cart img={photo_33} text="Director" href="/directorgold"/>
+                <Cart img={photo_34} text="International Director" href="/internationaldirectorgold"/>
+                <Cart img={photo_35} text="VIP Status" href="/vipstatus"/>
+                <Cart img={photo_36} text="Premier Director" href="/premierdirector"/>
             </div>
         </Container>
         </>
