@@ -37,6 +37,7 @@ import photo_33 from "/33.jpeg"
 import photo_34 from "/34.jpeg"
 import photo_35 from "/35.jpeg"
 import photo_36 from "/36.jpeg"
+import photo_37 from "/37.jpeg"
 
 const Home =()=>{
     return(
@@ -44,7 +45,7 @@ const Home =()=>{
         <Container>
             <h1 className="py-3 text-center bg-blue-200 text-4xl font-semibold">Team Go Extreme</h1>
             <div className="main pt-4 flex flex-wrap gap-x-11 items-center justify-center">
-                <Cart img={photo_11} text="New Diamond Status" href="/globalenterpreneurdimond"/>
+                {/* <Cart img={photo_11} text="New Diamond Status" href="/globalenterpreneurdimond"/>
                 <Cart img={photo_12} text="New VIP Status" href="/globalenterpreneurvip"/>
                 <Cart img={photo_13} text="2 Star Qualified" href="/globalenterpreneurtwostar"/>
                 <Cart img={photo_3} text="Manager" href="/manager"/>
@@ -62,24 +63,25 @@ const Home =()=>{
                 <Cart img={photo_10} text="Platinum Ambassador" href="/platinumambassador"/>
                 <Cart img={photo_14} text="Global Entrepreneur" href="/globalenterpreneuronyour"/>
                 <Cart img={photo_15} text="Global Entrepreneur" href="/globalenterpreneurcruise"/>
-                <Cart img={photo_19} text="Rockstar Award" href="/rockstar"/>
-                <Cart img={photo_20} text="Regional Director" href="/regionaldirector"/>
-                <Cart img={photo_21} text="Senior Manager" href="/seniormanagerpurple"/>
-                <Cart img={photo_22} text="Senior Director" href="/seniordirectorpurple"/>
+                <Cart img={photo_19} text="Rockstar Award" href="/rockstar"/> */}
+                <Cart img={photo_35} text="VIP Status" href="/vipstatus"/>
                 <Cart img={photo_23} text="Diamond Status" href="/diamondstatus"/>
-                <Cart img={photo_24} text="Managing Director" href="/managingdirectorred"/>
-                <Cart img={photo_25} text="Platinum Ambassador" href="/platinumambassadorgold"/>
-                <Cart img={photo_26} text="Gold Ambassador" href="/goldambassadorgold"/>
-                <Cart img={photo_27} text="New Achivement" href="/newachivement"/>
+                <Cart img={photo_37} text="2-Star Qualified" href="/twostarqualified"/>
                 <Cart img={photo_28} text="Manager" href="/managerorange"/>
+                <Cart img={photo_21} text="Senior Manager" href="/seniormanagerpurple"/>
+                <Cart img={photo_33} text="Director" href="/directorgold"/>
+                <Cart img={photo_22} text="Senior Director" href="/seniordirectorpurple"/>
+                <Cart img={photo_24} text="Managing Director" href="/managingdirectorred"/>
+                <Cart img={photo_20} text="Regional Director" href="/regionaldirector"/>
                 <Cart img={photo_29} text="Corporate Director" href="/corporatedirectorlime"/>
-                <Cart img={photo_30} text="Ambassador" href="/ambassadorpurple"/>
                 <Cart img={photo_31} text="Executive Director" href="/executivedirector"/>
                 <Cart img={photo_32} text="National Director" href="/nationaldirectorcyan"/>
-                <Cart img={photo_33} text="Director" href="/directorgold"/>
                 <Cart img={photo_34} text="International Director" href="/internationaldirectorgold"/>
-                <Cart img={photo_35} text="VIP Status" href="/vipstatus"/>
-                <Cart img={photo_36} text="Premier Director" href="/premierdirector"/>
+                <Cart img={photo_36} text="Premier Director" href="/premierdirectororange"/>
+                <Cart img={photo_30} text="Ambassador" href="/ambassadorpurple"/>
+                <Cart img={photo_26} text="Gold Ambassador" href="/goldambassadorgold"/>
+                <Cart img={photo_25} text="Platinum Ambassador" href="/platinumambassadorgold"/>
+                <Cart img={photo_27} text="New Achivement" href="/newachivement"/>
             </div>
         </Container>
         </>

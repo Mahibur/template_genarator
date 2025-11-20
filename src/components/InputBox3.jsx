@@ -178,7 +178,7 @@ const InputBox3 = ({imgClass,className,textClass}) => {
               ref={divRef}
               className={`mt-2 relative ${imgClass} bg-cover bg-no-repeat object-cover bg-center w-[1024px] h-[1024px]`}
             >
-              <p className={`w-full text-center absolute left-1/2 bottom-[14%] translate-x-[-50%] text-6xl font-bold capitalize text-[#e7f7f4] ${textClass}`}>
+              <p className={`w-full text-center absolute left-1/2 top-[24%] translate-x-[-42%] text-5xl font-bold capitalize text-[#e7f7f4] ${textClass}`}>
                 {name}
               </p>
               <img

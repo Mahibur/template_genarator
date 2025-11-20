@@ -20,6 +20,24 @@ import CorporateDirectorGreen from "./components/pages/CorporateDirectorGreen";
 import Director from "./components/pages/Director";
 import SeniorDirector from "./components/pages/SeniorDirector";
 import RockStar from "./components/pages/RockStar";
+import RegionalDirector from "./components/pages/RegionalDirector";
+import SeniorManagerPurple from "./components/pages/SeniorManagerPurple";
+import SeniorDirectorPurple from "./components/pages/SeniorDirectorPurple";
+import DiamondStatus from "./components/pages/DiamondStatus";
+import ManagingDirectorRed from "./components/pages/ManagingDirectorRed";
+import PlatinumAmbassadorGold from "./components/pages/PlatinumAmbassadorGold";
+import GoldAmbassadorGold from "./components/pages/GoldAmbassadorGold";
+import NewAchivement from "./components/pages/NewAchivement";
+import ManagerOrange from "./components/pages/ManagerOrange";
+import CorporateDirectorLime from "./components/pages/CorporateDirectorLime";
+import AmbassadorPurple from "./components/pages/AmbassadorPurple";
+import ExecutiveDirector from "./components/pages/ExecutiveDirector";
+import NationalDirectorCyan from "./components/pages/NationalDirectorCyan";
+import DirectorGold from "./components/pages/DirectorGold";
+import InternationalDirectorGold from "./components/pages/InternationalDirectorGold";
+import VipStatus from "./components/pages/VipStatus";
+import PremierDirectorOrange from "./components/pages/PremierDirectorOrange";
+import TwoStarQualified from "./components/pages/TwoStarQualified";
 
 
 const App =()=>{
@@ -27,7 +45,7 @@ const App =()=>{
     <>
     <Routes>
     <Route path="/" element={<Home />} />
-    <Route path="/managingdirector" element={<ManagingDirector/>} />
+    {/* <Route path="/managingdirector" element={<ManagingDirector/>} />
     <Route path="/corporatedirector" element={<CorporateDirector/>} />
     <Route path="/manager" element={<Manager/>} />
     <Route path="/seniormanager" element={<SeniorManager/>} />
@@ -45,8 +63,26 @@ const App =()=>{
     <Route path="/corporatedirectorgreen" element={<CorporateDirectorGreen/>} />
     <Route path="/director" element={<Director/>} />
     <Route path="/seniordirector" element={<SeniorDirector/>} />
-    <Route path="/rockstar" element={<RockStar/>} />
-
+    <Route path="/rockstar" element={<RockStar/>} /> */}
+    <Route path="/regionaldirector" element={<RegionalDirector/>} />
+    <Route path="/seniormanagerpurple" element={<SeniorManagerPurple/>} />
+    <Route path="/seniordirectorpurple" element={<SeniorDirectorPurple/>} />
+    <Route path="/diamondstatus" element={<DiamondStatus/>} />
+    <Route path="/managingdirectorred" element={<ManagingDirectorRed/>} />
+    <Route path="/platinumambassadorgold" element={<PlatinumAmbassadorGold/>} />
+    <Route path="/goldambassadorgold" element={<GoldAmbassadorGold/>} />
+    <Route path="/newachivement" element={<NewAchivement/>} />
+    <Route path="/managerorange" element={<ManagerOrange/>} />
+    <Route path="/corporatedirectorlime" element={<CorporateDirectorLime/>} />
+    <Route path="/ambassadorpurple" element={<AmbassadorPurple/>} />
+    <Route path="/executivedirector" element={<ExecutiveDirector/>} />
+    <Route path="/nationaldirectorcyan" element={<NationalDirectorCyan/>} />
+    <Route path="/directorgold" element={<DirectorGold/>} />
+    <Route path="/internationaldirectorgold" element={<InternationalDirectorGold/>} />
+    <Route path="/vipstatus" element={<VipStatus/>} />
+    <Route path="/premierdirectororange" element={<PremierDirectorOrange/>} />
+    <Route path="/twostarqualified" element={<TwoStarQualified/>} />
+    
     </Routes>
     </>
   )
