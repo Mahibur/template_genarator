@@ -20,6 +20,23 @@ import photo_16 from "/16.jpg"
 import photo_17 from "/17.jpg"
 import photo_18 from "/18.jpg"
 import photo_19 from "/19.jpeg"
+import photo_20 from "/20.jpeg"
+import photo_21 from "/21.jpeg"
+import photo_22 from "/22.jpeg"
+import photo_23 from "/23.jpeg"
+import photo_24 from "/24.jpeg"
+import photo_25 from "/25.jpeg"
+import photo_26 from "/26.jpeg"
+import photo_27 from "/27.jpeg"
+import photo_28 from "/28.jpeg"
+import photo_29 from "/29.jpeg"
+import photo_30 from "/30.jpeg"
+import photo_31 from "/31.jpeg"
+import photo_32 from "/32.jpeg"
+import photo_33 from "/33.jpeg"
+import photo_34 from "/34.jpeg"
+import photo_35 from "/35.jpeg"
+import photo_36 from "/36.jpeg"
 
 const Home =()=>{
     return(
@@ -46,6 +63,23 @@ const Home =()=>{
                 <Cart img={photo_14} text="Global Entrepreneur" href="/globalenterpreneuronyour"/>
                 <Cart img={photo_15} text="Global Entrepreneur" href="/globalenterpreneurcruise"/>
                 <Cart img={photo_19} text="Rockstar Award" href="/rockstar"/>
+                <Cart img={photo_20} text="Regional Director" href="/regionaldirector"/>
+                <Cart img={photo_21} text="Senior Manager" href="/seniormanagerpurple"/>
+                <Cart img={photo_22} text="Senior Director" href="/seniordirectorpurple"/>
+                <Cart img={photo_23} text="Regional Director" href="/regionaldirector"/>
+                <Cart img={photo_24} text="Regional Director" href="/regionaldirector"/>
+                <Cart img={photo_25} text="Regional Director" href="/regionaldirector"/>
+                <Cart img={photo_26} text="Regional Director" href="/regionaldirector"/>
+                <Cart img={photo_27} text="Regional Director" href="/regionaldirector"/>
+                <Cart img={photo_28} text="Regional Director" href="/regionaldirector"/>
+                <Cart img={photo_29} text="Regional Director" href="/regionaldirector"/>
+                <Cart img={photo_30} text="Regional Director" href="/regionaldirector"/>
+                <Cart img={photo_31} text="Regional Director" href="/regionaldirector"/>
+                <Cart img={photo_32} text="Regional Director" href="/regionaldirector"/>
+                <Cart img={photo_33} text="Regional Director" href="/regionaldirector"/>
+                <Cart img={photo_34} text="Regional Director" href="/regionaldirector"/>
+                <Cart img={photo_35} text="Regional Director" href="/regionaldirector"/>
+                <Cart img={photo_36} text="Regional Director" href="/regionaldirector"/>
 
             </div>
         </Container>
