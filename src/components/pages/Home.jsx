@@ -38,7 +38,7 @@ import photo_34 from "/34.jpeg"
 import photo_35 from "/35.jpeg"
 import photo_36 from "/36.jpeg"
 import photo_37 from "/37.jpeg"
-
+import photo_38 from "/38.jpg"
 const Home =()=>{
     return(
         <>
@@ -82,6 +82,7 @@ const Home =()=>{
                 <Cart img={photo_26} text="Gold Ambassador" href="/goldambassadorgold"/>
                 <Cart img={photo_25} text="Platinum Ambassador" href="/platinumambassadorgold"/>
                 <Cart img={photo_27} text="New Achivement" href="/newachivement"/>
+                <Cart img={photo_38} text="Titanium Status" href="/titaniumstatus"/>
             </div>
         </Container>
         </>

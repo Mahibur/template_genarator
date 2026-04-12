@@ -38,6 +38,7 @@ import InternationalDirectorGold from "./components/pages/InternationalDirectorG
 import VipStatus from "./components/pages/VipStatus";
 import PremierDirectorOrange from "./components/pages/PremierDirectorOrange";
 import TwoStarQualified from "./components/pages/TwoStarQualified";
+import TitaniumStatus from "./components/pages/TitaniumStatus";
 
 
 const App =()=>{
@@ -82,7 +83,7 @@ const App =()=>{
     <Route path="/vipstatus" element={<VipStatus/>} />
     <Route path="/premierdirectororange" element={<PremierDirectorOrange/>} />
     <Route path="/twostarqualified" element={<TwoStarQualified/>} />
-    
+    <Route path="/titaniumstatus" element={<TitaniumStatus/>} />
     </Routes>
     </>
   )
