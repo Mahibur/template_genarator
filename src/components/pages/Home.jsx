@@ -20,6 +20,7 @@ import photo_16 from "/16.jpg"
 import photo_17 from "/17.jpg"
 import photo_18 from "/18.jpg"
 import photo_19 from "/19.jpeg"
+import photo_welcome from "/welcome.jpg"
 import photo_20 from "/20.jpeg"
 import photo_21 from "/21.jpeg"
 import photo_22 from "/22.jpeg"
@@ -64,6 +65,7 @@ const Home =()=>{
                 <Cart img={photo_14} text="Global Entrepreneur" href="/globalenterpreneuronyour"/>
                 <Cart img={photo_15} text="Global Entrepreneur" href="/globalenterpreneurcruise"/>
                 <Cart img={photo_19} text="Rockstar Award" href="/rockstar"/> */}
+                <Cart img={photo_welcome} text="Welcome To Team" href="/welcometoteam"/>
                 <Cart img={photo_35} text="VIP Status" href="/vipstatus"/>
                 <Cart img={photo_23} text="Diamond Status" href="/diamondstatus"/>
                 <Cart img={photo_37} text="2-Star Qualified" href="/twostarqualified"/>

@@ -39,6 +39,7 @@ import VipStatus from "./components/pages/VipStatus";
 import PremierDirectorOrange from "./components/pages/PremierDirectorOrange";
 import TwoStarQualified from "./components/pages/TwoStarQualified";
 import TitaniumStatus from "./components/pages/TitaniumStatus";
+import WelcomeToTeam from "./components/pages/WelcomeToTeam";
 
 
 const App =()=>{
@@ -65,6 +66,7 @@ const App =()=>{
     <Route path="/director" element={<Director/>} />
     <Route path="/seniordirector" element={<SeniorDirector/>} />
     <Route path="/rockstar" element={<RockStar/>} /> */}
+    <Route path="/welcometoteam" element={<WelcomeToTeam/>} />
     <Route path="/regionaldirector" element={<RegionalDirector/>} />
     <Route path="/seniormanagerpurple" element={<SeniorManagerPurple/>} />
     <Route path="/seniordirectorpurple" element={<SeniorDirectorPurple/>} />
