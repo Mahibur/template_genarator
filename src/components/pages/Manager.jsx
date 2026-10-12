@@ -1,14 +1,15 @@
 import React from "react";
 import Heading from "../../Heading";
-import InputBox from "../InputBox";
+import InputBox4 from "../InputBox4";
 
 const Manager = () => {
   return (
     <div>
-      <Heading text="Manager" className="bg-[#B94401]" />
-      <InputBox
-        imgClass="bg-[url(/3.jpg)]"
-        className="absolute top-1/2 left-1/2 translate-x-[-54%] translate-y-[-38%] block w-84 rounded-[50%]"
+      <Heading text="Manager" className="bg-[#C65B13]" />
+      <InputBox4
+        imgClass="bg-[url(/28.jpeg)]"
+        className="absolute top-1/2 left-1/2 translate-x-[-51%] translate-y-[-23%] block w-92.5 rounded-[50%]"
+        textClass="translate-y-[34%]"
       />
     </div>
   );

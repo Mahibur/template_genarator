@@ -7,7 +7,7 @@ const SeniorDirector = () => {
     <div>
       <Heading text="Senior Director" className="bg-[#2A9F4E] text-[#f1f1f1f1]" />
       <InputBox4
-        imgClass="bg-[url(/welcome.jpg)]"
+        imgClass="bg-[url(/8.jpg)]"
         className="absolute top-1/2 left-1/2 translate-x-[-51%] translate-y-[-17%] block w-89 rounded-[50%]"
         textClass="translate-y-[50%]"
       />
