@@ -1,26 +1,6 @@
 import React from "react"
 import Home from "./components/pages/Home";
 import { Route, Routes } from "react-router-dom";
-import ManagingDirector from "./components/pages/ManagingDirector";
-import CorporateDirector from "./components/pages/CorporateDirector";
-import Manager from "./components/pages/Manager";
-import SeniorManager from "./components/pages/SeniorManager";
-import NationalDirector from "./components/pages/NationalDirector";
-import InternationalDirector from "./components/pages/InternationalDirector";
-import PremierDirector from "./components/pages/PremierDirector";
-import Ambassador from "./components/pages/Ambassador";
-import GoldAmbassador from "./components/pages/GoldAmbassador";
-import PlatinumAmbassador from "./components/pages/PlatinumAmbassador";
-import GlobalEnterpreneurDimond from "./components/pages/GlobalEnterpreneurDimond";
-import GlobalEnterpreneurVip from "./components/pages/GlobalEnterpreneurVip";
-import GlobalEnterpreneurTwoStar from "./components/pages/GlobalEnterpreneurTwoStar";
-import GlobalEnterpreneurOnYour from "./components/pages/GlobalEnterpreneurOnYour";
-import GlobalEnterpreneurCruise from "./components/pages/GlobalEnterpreneurCruise";
-import CorporateDirectorGreen from "./components/pages/CorporateDirectorGreen";
-import Director from "./components/pages/Director";
-import SeniorDirector from "./components/pages/SeniorDirector";
-import RockStar from "./components/pages/RockStar";
-import RegionalDirector from "./components/pages/RegionalDirector";
 import SeniorManagerPurple from "./components/pages/SeniorManagerPurple";
 import SeniorDirectorPurple from "./components/pages/SeniorDirectorPurple";
 import DiamondStatus from "./components/pages/DiamondStatus";
@@ -36,10 +16,9 @@ import NationalDirectorCyan from "./components/pages/NationalDirectorCyan";
 import DirectorGold from "./components/pages/DirectorGold";
 import InternationalDirectorGold from "./components/pages/InternationalDirectorGold";
 import VipStatus from "./components/pages/VipStatus";
-import PremierDirectorOrange from "./components/pages/PremierDirectorOrange";
-import TwoStarQualified from "./components/pages/TwoStarQualified";
 import TitaniumStatus from "./components/pages/TitaniumStatus";
-import WelcomeToTeam from "./components/pages/WelcomeToTeam";
+import PremiereDirector from "./components/pages/PremiereDirector";
+import SeniorDirector from "./components/pages/SeniorDirector";
 
 
 const App =()=>{
@@ -66,10 +45,9 @@ const App =()=>{
     <Route path="/director" element={<Director/>} />
     <Route path="/seniordirector" element={<SeniorDirector/>} />
     <Route path="/rockstar" element={<RockStar/>} /> */}
-    <Route path="/welcometoteam" element={<WelcomeToTeam/>} />
+    <Route path="/seniordirector" element={<SeniorDirector/>} />
     {/* <Route path="/regionaldirector" element={<RegionalDirector/>} /> */}
     <Route path="/seniormanagerpurple" element={<SeniorManagerPurple/>} />
-    <Route path="/seniordirectorpurple" element={<SeniorDirectorPurple/>} />
     <Route path="/diamondstatus" element={<DiamondStatus/>} />
     <Route path="/managingdirectorred" element={<ManagingDirectorRed/>} />
     <Route path="/platinumambassadorgold" element={<PlatinumAmbassadorGold/>} />
@@ -83,8 +61,7 @@ const App =()=>{
     <Route path="/directorgold" element={<DirectorGold/>} />
     <Route path="/internationaldirectorgold" element={<InternationalDirectorGold/>} />
     <Route path="/vipstatus" element={<VipStatus/>} />
-    <Route path="/premierdirectororange" element={<PremierDirectorOrange/>} />
-    <Route path="/twostarqualified" element={<TwoStarQualified/>} />
+    <Route path="/premieredirector" element={<PremiereDirector/>} />
     <Route path="/titaniumstatus" element={<TitaniumStatus/>} />
     </Routes>
     </>
