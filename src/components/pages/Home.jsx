@@ -74,9 +74,9 @@ const Home =()=>{
                 <Cart img={photo_33} text="Director" href="/directorgold"/>
                 <Cart img={photo_22} text="Senior Director" href="/seniordirectorpurple"/>
                 <Cart img={photo_24} text="Managing Director" href="/managingdirectorred"/>
-                <Cart img={photo_20} text="Regional Director" href="/regionaldirector"/>
+                {/* <Cart img={photo_20} text="Regional Director" href="/regionaldirector"/> */}
                 <Cart img={photo_29} text="Corporate Director" href="/corporatedirectorlime"/>
-                <Cart img={photo_31} text="Executive Director" href="/executivedirector"/>
+                {/* <Cart img={photo_31} text="Executive Director" href="/executivedirector"/> */}
                 <Cart img={photo_32} text="National Director" href="/nationaldirectorcyan"/>
                 <Cart img={photo_34} text="International Director" href="/internationaldirectorgold"/>
                 <Cart img={photo_36} text="Premier Director" href="/premierdirectororange"/>

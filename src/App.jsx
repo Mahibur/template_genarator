@@ -67,7 +67,7 @@ const App =()=>{
     <Route path="/seniordirector" element={<SeniorDirector/>} />
     <Route path="/rockstar" element={<RockStar/>} /> */}
     <Route path="/welcometoteam" element={<WelcomeToTeam/>} />
-    <Route path="/regionaldirector" element={<RegionalDirector/>} />
+    {/* <Route path="/regionaldirector" element={<RegionalDirector/>} /> */}
     <Route path="/seniormanagerpurple" element={<SeniorManagerPurple/>} />
     <Route path="/seniordirectorpurple" element={<SeniorDirectorPurple/>} />
     <Route path="/diamondstatus" element={<DiamondStatus/>} />
@@ -78,7 +78,7 @@ const App =()=>{
     <Route path="/managerorange" element={<ManagerOrange/>} />
     <Route path="/corporatedirectorlime" element={<CorporateDirectorLime/>} />
     <Route path="/ambassadorpurple" element={<AmbassadorPurple/>} />
-    <Route path="/executivedirector" element={<ExecutiveDirector/>} />
+    {/* <Route path="/executivedirector" element={<ExecutiveDirector/>} /> */}
     <Route path="/nationaldirectorcyan" element={<NationalDirectorCyan/>} />
     <Route path="/directorgold" element={<DirectorGold/>} />
     <Route path="/internationaldirectorgold" element={<InternationalDirectorGold/>} />
